@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favcom.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form">
+            <h1>Register Form</h1>
+            <!-- username -->
+             <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <small class="error-msn">Username is required</small> <!-- error message -->
+            </div>
+            <!-- email --> 
+             <div class="form-group">
+                <label  for="email">Email</label>
+                <input placeholder="Enter Email" type="email" id="email" required>
+                <small class="error-msn">Email is required</small> <!-- error message -->
+             </div>
+             <!-- password-->
+              <div class="form-group">
+                <label for="password" id="password"
+                placeholder="Enter Password">Password</label>
+                <input  placeholder="Enter Password"  type="password" id="password"  required>
+                <small class="error-msn">Password is required</small>  <!-- error message -->
+              </div>
+                <!-- confirm password -->
+                 <div class="form-group">
+                <label for="confirm-password" id="confirm-password"
+                placeholder="Confirm Password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <small class="error-msn">Passwords do not match</small>  <!-- error message -->
+              </div>
+              <button id="submit" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

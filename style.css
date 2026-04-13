@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,698;1,698&family=Noto+Sans+Mahajani&family=Poppins:wght@200;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,698;1,698&family=Noto+Sans+Mahajani&family=Poppins:wght@200;600&family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    display: flex; /* Direção flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: #007BFF;
+  text-align: center;
+}
+label {
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #007BFF;
+}
+.container {
+
+    background-color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    /*vamos aqui mudar a direcao das linhas para coluna, para que os itens fiquem um embaixo do outro*/
+    display: flex; /*Direção flexbox para organizar os itens dentro do container*/
+    flex-direction: column; /*Organiza os itens em coluna*/
+    width: 350px;
+    border: 2px solid #007BFF;
+}
+
+#registration-form {
+    /*Vamos aqui mudar a direcao das linhas para coluna, para que os itens fiquem um embaixo do outro*/
+    display: flex; /*Direção flexbox para organizar os itens dentro do formulário*/
+    flex-direction: column; /*Organiza os itens em coluna*/
+
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#submit {
+
+    padding: 12px;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit:hover {
+
+    background-color: #004085;
+    transform: translate(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input {
+
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #007BFF;
+}
+
+input:focus {
+
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 64, 133, 0.5);
+}
+small {
+    color: #e74c3c; /* Cor vermelha para a mensagem de erro */
+    visibility: hidden; /* Esconde a mensagem de erro por padrão */
+    bottom: 15px;/* Ajusta a posição do texto de erro */
+    left: 0; /* Alinha o texto de erro à esquerda do campo */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do texto de erro */
+}
+
+.form-group.error input{
+    border-color: #e74c3c; /* Cor vermelha para indicar erro */;
+}
+
+.form-group.success input{
+    border-color: #27ae60; /* Cor verde para indicar sucesso */;
+}
+
+.form-group.error small {
+    visibility: visible; /* Exibe a mensagem de erro quando há um erro */
+}
